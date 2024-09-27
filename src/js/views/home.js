@@ -10,7 +10,7 @@ export const Home = () => {
 	return (
 		<>
 			<div className="d-flex justify-content-end my-5" style={{marginRight: "15%"}}>
-				<Link to="/addContact">
+				<Link to="/add-contact">
 					<button className="btn btn-success">Add New Contact</button>
 				</Link>
 			</div>

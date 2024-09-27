@@ -24,7 +24,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("Raw data from API: ", resp);
 						return resp.json();
 					})
-					.then
+					.then((data) => {
+						console.log("User added Successfully", data);
+						getActions().getContacts()
+					})
+					.catch((error) => console.error("add username failed", error));
 			},
 
 
